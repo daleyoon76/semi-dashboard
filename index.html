@@ -65,7 +65,7 @@ footer { margin-top: 3rem; padding-top: 1rem;
 </head><body><div class="wrap">
 <header>
 <h1>반도체 사이클 계기판</h1>
-<div class="meta">생성 시각 2026-10-15 14:15:41 · 지표 17 개 중 계산 성공 17 개</div>
+<div class="meta">생성 시각 2026-10-15 14:29:51 · 지표 17 개 중 계산 성공 17 개</div>
 </header>
 <div class="panel warn">
 <b>이 페이지가 하지 않는 일</b>
@@ -86,10 +86,10 @@ footer { margin-top: 3rem; padding-top: 1rem;
 </ol>
 <div class="meta">해석 5 건 · 근거와 반대 해석은 아래 「해석 상세」 절에 있다 · 해석 기준 계기판 생성 시각 2026-10-14 13:48:39</div>
 
-<h2>1. 한눈에 보기 — 과열도</h2>
+<h2>1. 한눈에 보기: 과열도</h2>
 <div class="panel">
 <ul>
-<li><b>자</b>: 직전 10 년 분위다. 월별 지표는 모수가 모두 120 개월로 같아 나란히 비교할 수 있다.</li>
+<li><b>척도</b>: 직전 10 년 분위다. 월별 지표는 모수(계산에 사용한 관측치 개수)가 모두 120 개월로 같아 나란히 비교할 수 있다.</li>
 <li><b>방향</b>: 지표마다 「커지면 사이클이 뜨거워지는 쪽인가」를 <code>data/indicators.json</code> 의 <code>heat_sign</code> 으로 미리 정했다. 음수인 지표는 분위를 100 에서 뺀다. <b class="key">그 부호는 메커니즘으로 정했고 데이터를 보고 고르지 않았다.</b></li>
 <li><b>읽는 법</b>: 0 이면 침체 쪽 극단, 100 이면 과열 쪽 극단이다.</li>
 </ul>
@@ -114,7 +114,7 @@ footer { margin-top: 3rem; padding-top: 1rem;
 </tbody></table>
 <div class="scale"><span>0 · 침체 쪽 극단</span><span>100 · 과열 쪽 극단</span></div>
 <h3>분기 지표 (모수가 작다 · 월별과 나란히 두지 않는다)</h3>
-<div class="panel warn">모수가 23~38 분기다. 월별 지표와 같은 자가 아니다.<br><b>참여 회사 구성도 지표마다 다르다.</b> 각 지표의 라벨에 적힌 회사 수를 보라. 아마존이 2020-06 이후 잔여 이행 의무 공시를 중단해, 그 지표만 2 사 합계이고 나머지는 3 사 합계다. 모수가 같아도 담긴 회사가 다르면 두 지표를 같은 뜻으로 읽을 수 없다.</div>
+<div class="panel warn">모수가 23~38 분기다. 월별 지표와 같은 척도가 아니다.<br><b>참여 회사 구성도 지표마다 다르다.</b> 각 지표의 라벨에 적힌 회사 수를 보라. 아마존이 2020-06 이후 잔여 이행 의무 공시를 중단해, 그 지표만 2 사 합계이고 나머지는 3 사 합계다. 모수가 같아도 담긴 회사가 다르면 두 지표를 같은 뜻으로 읽을 수 없다.</div>
 <table><thead><tr><th>지표</th><th class="barcell">침체 ←→ 과열</th><th class="num">과열도</th><th>묶음</th></tr></thead><tbody>
 <tr><td>클라우드 3사 설비투자 합계</td><td class="barcell"><div class="bar"><span style="width:96%"></span></div></td><td class="num">96</td><td><span class="chip">수요</span></td></tr>
 <tr><td>클라우드 2사 잔여 이행 의무 합계</td><td class="barcell"><div class="bar"><span style="width:93%"></span></div></td><td class="num">93</td><td><span class="chip">수요</span></td></tr>
@@ -123,7 +123,7 @@ footer { margin-top: 3rem; padding-top: 1rem;
 <div class="scale"><span>0 · 침체 쪽 극단</span><span>100 · 과열 쪽 극단</span></div>
 <h3>묶음별 평균 (동일 가중)</h3>
 <div class="panel warn">
-<b>가중치를 데이터로 고르지 않았다.</b> 표본이 작아 가중치를 평가할 기반이 없다(2026-10-08 측정에서 난수 대조 24 퍼센트·11.5 퍼센트). 동일 가중은 「고르지 않았다」는 뜻이다. <b>이 평균에 예측력을 주장하지 않는다.</b><br><b>지표를 추가하거나 빼면 평균이 그 지표 쪽으로 움직인다.</b> 묶음의 평균이 바뀐 것과 그 묶음이 실제로 달라진 것은 구별해야 한다. 2026-10-14 에 과열도 93 짜리 잔여 이행 의무를 「수요」에 넣자 그 묶음 평균이 54 에서 62 로 올랐는데, 이는 수요가 뜨거워진 것이 아니라 담긴 지표가 바뀐 결과다.
+<b>가중치를 데이터로 고르지 않았다.</b> 표본이 작아 가중치를 평가할 기반이 없다(2026-10-08 측정에서 무작위 대조 24 퍼센트·11.5 퍼센트). 동일 가중은 「고르지 않았다」는 뜻이다. <b>이 평균에 예측력을 주장하지 않는다.</b><br><b>지표를 추가하거나 빼면 평균이 그 지표 쪽으로 움직인다.</b> 묶음의 평균이 바뀐 것과 그 묶음이 실제로 달라진 것은 구별해야 한다. 2026-10-14 에 과열도 93 짜리 잔여 이행 의무를 「수요」에 넣자 그 묶음 평균이 54 에서 62 로 올랐는데, 이는 수요가 뜨거워진 것이 아니라 담긴 지표가 바뀐 결과다.
 </div>
 <div class="tiles">
 <div class="tile"><div class="k">가격</div><div class="v">71</div><div class="k">지표 2 개 평균</div></div>
@@ -159,38 +159,38 @@ footer { margin-top: 3rem; padding-top: 1rem;
 <h2>3. 묶음별 지표 상세</h2>
 <h3>가격</h3>
 <table><thead><tr><th>지표</th><th>기준</th><th class="num">최근값</th><th class="num">전년 대비</th><th class="num">과열도</th><th class="num">10 년 분위</th><th class="num">전체 분위</th><th>분위 기준</th></tr></thead><tbody>
-<tr><td>메모리 수출 단가<br><span class="meta">커지면 메모리 가격이 올랐다는 뜻이다.</span></td><td>2026-08</td><td class="num">76,522 달러/kg</td><td class="num">+308.0%</td><td class="num"><b>97</b></td><td class="num">97 (120)</td><td class="num">99 (452)</td><td><code>yoy</code></td></tr>
-<tr><td>반도체 생산자물가<br><span class="meta">커지면 반도체 출하 가격이 올랐다는 뜻이다.</span></td><td>2026-08</td><td class="num">28.47 지수 (1998-12=100)</td><td class="num">-3.1%</td><td class="num"><b>45</b></td><td class="num">45 (120)</td><td class="num">46 (702)</td><td><code>yoy</code></td></tr>
+<tr><td>메모리 수출 단가<br><span class="meta">커지면 메모리 가격이 올랐다는 뜻이다.</span></td><td>2026-08</td><td class="num">76,522 달러/kg</td><td class="num">+308.0%</td><td class="num"><b>97</b></td><td class="num">97 (120)</td><td class="num">99 (452)</td><td><code>전년 대비</code></td></tr>
+<tr><td>반도체 생산자물가<br><span class="meta">커지면 반도체 출하 가격이 올랐다는 뜻이다.</span></td><td>2026-08</td><td class="num">28.47 지수 (1998-12=100)</td><td class="num">-3.1%</td><td class="num"><b>45</b></td><td class="num">45 (120)</td><td class="num">46 (702)</td><td><code>전년 대비</code></td></tr>
 </tbody></table>
 <h3>물량</h3>
 <table><thead><tr><th>지표</th><th>기준</th><th class="num">최근값</th><th class="num">전년 대비</th><th class="num">과열도</th><th class="num">10 년 분위</th><th class="num">전체 분위</th><th>분위 기준</th></tr></thead><tbody>
-<tr><td>메모리 수출 중량<br><span class="meta">커지면 메모리 출하 물량이 늘었다는 뜻이다.</span></td><td>2026-08</td><td class="num">535 톤</td><td class="num">-4.3%</td><td class="num"><b>24</b></td><td class="num">24 (120)</td><td class="num">32 (452)</td><td><code>yoy</code></td></tr>
-<tr><td>미국 반도체 산업생산<br><span class="meta">커지면 미국 반도체 생산이 늘었다는 뜻이다.</span></td><td>2026-08</td><td class="num">190 지수 (2017=100)</td><td class="num">+12.4%</td><td class="num"><b>76</b></td><td class="num">76 (120)</td><td class="num">39 (644)</td><td><code>yoy</code></td></tr>
+<tr><td>메모리 수출 중량<br><span class="meta">커지면 메모리 출하 물량이 늘었다는 뜻이다.</span></td><td>2026-08</td><td class="num">535 톤</td><td class="num">-4.3%</td><td class="num"><b>24</b></td><td class="num">24 (120)</td><td class="num">32 (452)</td><td><code>전년 대비</code></td></tr>
+<tr><td>미국 반도체 산업생산<br><span class="meta">커지면 미국 반도체 생산이 늘었다는 뜻이다.</span></td><td>2026-08</td><td class="num">190 지수 (2017=100)</td><td class="num">+12.4%</td><td class="num"><b>76</b></td><td class="num">76 (120)</td><td class="num">39 (644)</td><td><code>전년 대비</code></td></tr>
 </tbody></table>
 <h3>공급</h3>
 <table><thead><tr><th>지표</th><th>기준</th><th class="num">최근값</th><th class="num">전년 대비</th><th class="num">과열도</th><th class="num">10 년 분위</th><th class="num">전체 분위</th><th>분위 기준</th></tr></thead><tbody>
-<tr><td>반도체 생산능력 지수<br><span class="meta">증가율이 커지면 증설이 한창이라는 뜻이다.</span></td><td>2026-08</td><td class="num">257 지수 (2017=100)</td><td class="num">+16.3%</td><td class="num"><b>85</b></td><td class="num">85 (120)</td><td class="num">56 (644)</td><td><code>yoy</code></td></tr>
-<tr><td>반도체 공장 가동률<br><span class="meta">커지면 공장이 바쁘다는 뜻이다. 역사 범위 58.8~93.2 퍼센트.</span></td><td>2026-08</td><td class="num">73.94 퍼센트</td><td class="num">-3.4%</td><td class="num"><b>12</b></td><td class="num">12 (120)</td><td class="num">25 (656)</td><td><code>level</code></td></tr>
-<tr><td>반도체 장비 수입<br><span class="meta">커지면 설비 발주가 늘었다는 뜻이다.</span></td><td>2026-08</td><td class="num">2,421 백만 달러</td><td class="num">+129.2%</td><td class="num"><b>91</b></td><td class="num">91 (120)</td><td class="num">81 (452)</td><td><code>yoy</code></td></tr>
+<tr><td>반도체 생산능력 지수<br><span class="meta">증가율이 커지면 증설이 한창이라는 뜻이다.</span></td><td>2026-08</td><td class="num">257 지수 (2017=100)</td><td class="num">+16.3%</td><td class="num"><b>85</b></td><td class="num">85 (120)</td><td class="num">56 (644)</td><td><code>전년 대비</code></td></tr>
+<tr><td>반도체 공장 가동률<br><span class="meta">커지면 공장이 바쁘다는 뜻이다. 역사 범위 58.8~93.2 퍼센트.</span></td><td>2026-08</td><td class="num">73.94 퍼센트</td><td class="num">-3.4%</td><td class="num"><b>12</b></td><td class="num">12 (120)</td><td class="num">25 (656)</td><td><code>수준</code></td></tr>
+<tr><td>반도체 장비 수입<br><span class="meta">커지면 설비 발주가 늘었다는 뜻이다.</span></td><td>2026-08</td><td class="num">2,421 백만 달러</td><td class="num">+129.2%</td><td class="num"><b>91</b></td><td class="num">91 (120)</td><td class="num">81 (452)</td><td><code>전년 대비</code></td></tr>
 </tbody></table>
 <h3>수요</h3>
 <div class="panel warn">분기 지표다. 세 회사 공통 분기는 설비투자 46 개, 계약 부채 32 개이고, 그 구간에 든 메모리 가격 하락 사건은 2023 년 <b>한 번뿐</b>이다.</div>
 <table><thead><tr><th>지표</th><th>기준</th><th class="num">최근값</th><th class="num">전년 대비</th><th class="num">과열도</th><th class="num">10 년 분위</th><th class="num">전체 분위</th><th>분위 기준</th></tr></thead><tbody>
-<tr><td>클라우드 3사 설비투자 합계<br><span class="meta">커지면 데이터센터 증설이 늘었다는 뜻이다.</span></td><td>2026-06</td><td class="num">135 십억 달러</td><td class="num">+88.2%</td><td class="num"><b>96</b></td><td class="num">96 (38)</td><td class="num">96 (41)</td><td><code>yoy</code></td></tr>
+<tr><td>클라우드 3사 설비투자 합계<br><span class="meta">커지면 데이터센터 증설이 늘었다는 뜻이다.</span></td><td>2026-06</td><td class="num">135 십억 달러</td><td class="num">+88.2%</td><td class="num"><b>96</b></td><td class="num">96 (38)</td><td class="num">96 (41)</td><td><code>전년 대비</code></td></tr>
 <tr><td colspan="8" class="meta">공통 구간 안에서 빠진 분기 1 개: 2017-06-30</td></tr>
-<tr><td>클라우드 3사 계약 부채 합계<br><span class="meta">커지면 고객이 선불한 계약이 늘었다는 뜻이다. 🔴 이 수치는 계약 총액이 아니라 「이미 받은 돈」만 담으므로, 계약 형태가 선불 약정에서 사용량 과금으로 옮겨 가면 수요가 그대로여도 낮아진다. 2026-10-14 진단에서 알파벳은 그 방향이 뚜렷했고 마이크로소프트는 최근 2 분기 증가율이 둔화돼 혼재 신호였다. 아마존은 2020-06 이후 공시가 끊겨 시험할 수 없다. 그러므로 cloud_rpo 를 함께 읽어야 한다.</span></td><td>2026-06</td><td class="num">103 십억 달러</td><td class="num">+10.0%</td><td class="num"><b>23</b></td><td class="num">23 (28)</td><td class="num">23 (28)</td><td><code>yoy</code></td></tr>
-<tr><td>클라우드 2사 잔여 이행 의무 합계<br><span class="meta">커지면 고객과 맺은 계약 총액이 늘었다는 뜻이다. 선불로 받았는지와 무관하게 계약 전체를 담으므로, cloud_deferred 가 선불 비중 변화에 흔들릴 때 그것을 가르는 데 쓴다. 🔴 아마존이 빠진 2사 합계다. 아마존은 2020-06 분기까지만 이 항목을 공시하고 그 뒤 중단했다(2026-10-14 실측). 그래서 AWS 가 빠져 있고 cloud_capex·cloud_deferred 의 3사 합계와 구성이 다르다.</span></td><td>2026-06</td><td class="num">1,204 십억 달러</td><td class="num">+149.1%</td><td class="num"><b>93</b></td><td class="num">93 (23)</td><td class="num">93 (23)</td><td><code>yoy</code></td></tr>
-<tr><td>10년 국채 금리<br><span class="meta">커지면 자본 비용이 올라 설비투자를 누른다.</span></td><td>2026-09</td><td class="num">5.29 퍼센트</td><td class="num">+27.2%</td><td class="num"><b>0</b></td><td class="num">100 (120)</td><td class="num">49 (777)</td><td><code>level</code></td></tr>
-<tr><td>회사채 가산금리<br><span class="meta">커지면 기업 자금 조달이 어려워졌다는 뜻이다.</span></td><td>2026-09</td><td class="num">1.47 퍼센트포인트</td><td class="num">-12.0%</td><td class="num"><b>95</b></td><td class="num">5 (120)</td><td class="num">3 (489)</td><td><code>level</code></td></tr>
+<tr><td>클라우드 3사 계약 부채 합계<br><span class="meta">커지면 고객이 선불한 계약이 늘었다는 뜻이다. 🔴 이 수치는 계약 총액이 아니라 「이미 받은 돈」만 담으므로, 계약 형태가 선불 약정에서 사용량 과금으로 옮겨 가면 수요가 그대로여도 낮아진다. 2026-10-14 진단에서 알파벳은 그 방향이 뚜렷했고 마이크로소프트는 최근 2 분기 증가율이 둔화돼 혼재 신호였다. 아마존은 2020-06 이후 공시가 끊겨 시험할 수 없다. 그러므로 cloud_rpo 를 함께 읽어야 한다.</span></td><td>2026-06</td><td class="num">103 십억 달러</td><td class="num">+10.0%</td><td class="num"><b>23</b></td><td class="num">23 (28)</td><td class="num">23 (28)</td><td><code>전년 대비</code></td></tr>
+<tr><td>클라우드 2사 잔여 이행 의무 합계<br><span class="meta">커지면 고객과 맺은 계약 총액이 늘었다는 뜻이다. 선불로 받았는지와 무관하게 계약 전체를 담으므로, cloud_deferred 가 선불 비중 변화에 흔들릴 때 그것을 가르는 데 쓴다. 🔴 아마존이 빠진 2사 합계다. 아마존은 2020-06 분기까지만 이 항목을 공시하고 그 뒤 중단했다(2026-10-14 실측). 그래서 AWS 가 빠져 있고 cloud_capex·cloud_deferred 의 3사 합계와 구성이 다르다.</span></td><td>2026-06</td><td class="num">1,204 십억 달러</td><td class="num">+149.1%</td><td class="num"><b>93</b></td><td class="num">93 (23)</td><td class="num">93 (23)</td><td><code>전년 대비</code></td></tr>
+<tr><td>10년 국채 금리<br><span class="meta">커지면 자본 비용이 올라 설비투자를 누른다.</span></td><td>2026-09</td><td class="num">5.29 퍼센트</td><td class="num">+27.2%</td><td class="num"><b>0</b></td><td class="num">100 (120)</td><td class="num">49 (777)</td><td><code>수준</code></td></tr>
+<tr><td>회사채 가산금리<br><span class="meta">커지면 기업 자금 조달이 어려워졌다는 뜻이다.</span></td><td>2026-09</td><td class="num">1.47 퍼센트포인트</td><td class="num">-12.0%</td><td class="num"><b>95</b></td><td class="num">5 (120)</td><td class="num">3 (489)</td><td><code>수준</code></td></tr>
 </tbody></table>
 <h3>선행 후보</h3>
 <div class="panel warn">「후보」라는 말 그대로다. 열한 판의 측정에서 이 묶음의 지표가 가격을 앞선다는 판정은 나오지 않았다.</div>
 <table><thead><tr><th>지표</th><th>기준</th><th class="num">최근값</th><th class="num">전년 대비</th><th class="num">과열도</th><th class="num">10 년 분위</th><th class="num">전체 분위</th><th>분위 기준</th></tr></thead><tbody>
-<tr><td>출하 대비 재고 비율(컴퓨터 및 전자제품 전체)<br><span class="meta">커지면 재고가 소진되고 출하가 늘었다는 뜻이다. 반도체 전용 계열이 아니다.</span></td><td>2026-08</td><td class="num">0.498 배 (출하 ÷ 재고)</td><td class="num">+5.9%</td><td class="num"><b>42</b></td><td class="num">42 (120)</td><td class="num">13 (416)</td><td><code>level</code></td></tr>
-<tr><td>재고 변화 부호 반전(컴퓨터 및 전자제품 전체)<br><span class="meta">커지면 재고가 줄고 있다는 뜻이다(전월 대비 증감에 음수를 붙인 값). 반도체 전용 계열이 아니다.</span></td><td>2026-08</td><td class="num">-0.206 퍼센트 (전월 대비 · 부호 반전)</td><td class="num">+176.5%</td><td class="num"><b>52</b></td><td class="num">52 (120)</td><td class="num">44 (415)</td><td><code>level</code></td></tr>
-<tr><td>신규 주문(컴퓨터 및 전자제품 전체 · 반도체 전용 계열은 제공되지 않음)<br><span class="meta">커지면 수주가 늘었다는 뜻이다. 반도체 전용 계열이 아니다.</span></td><td>2026-08</td><td class="num">30,868 백만 달러</td><td class="num">+16.5%</td><td class="num"><b>99</b></td><td class="num">99 (120)</td><td class="num">96 (403)</td><td><code>yoy</code></td></tr>
-<tr><td>나스닥<br><span class="meta">커지면 기술 수요 기대가 커졌다는 뜻이다.</span></td><td>2026-09</td><td class="num">26,861 지수</td><td class="num">+18.5%</td><td class="num"><b>38</b></td><td class="num">38 (120)</td><td class="num">58 (656)</td><td><code>yoy</code></td></tr>
-<tr><td>필라델피아 반도체 지수<br><span class="meta">커지면 반도체 기업 주가가 올랐다는 뜻이다.</span></td><td>2026-09</td><td class="num">12,629 지수</td><td class="num">+98.3%</td><td class="num"><b>95</b></td><td class="num">95 (120)</td><td class="num">93 (376)</td><td><code>yoy</code></td></tr>
+<tr><td>출하 대비 재고 비율(컴퓨터 및 전자제품 전체)<br><span class="meta">커지면 재고가 소진되고 출하가 늘었다는 뜻이다. 반도체 전용 계열이 아니다.</span></td><td>2026-08</td><td class="num">0.498 배 (출하 ÷ 재고)</td><td class="num">+5.9%</td><td class="num"><b>42</b></td><td class="num">42 (120)</td><td class="num">13 (416)</td><td><code>수준</code></td></tr>
+<tr><td>재고 변화 부호 반전(컴퓨터 및 전자제품 전체)<br><span class="meta">커지면 재고가 줄고 있다는 뜻이다(전월 대비 증감에 음수를 붙인 값). 반도체 전용 계열이 아니다.</span></td><td>2026-08</td><td class="num">-0.206 퍼센트 (전월 대비 · 부호 반전)</td><td class="num">+176.5%</td><td class="num"><b>52</b></td><td class="num">52 (120)</td><td class="num">44 (415)</td><td><code>수준</code></td></tr>
+<tr><td>신규 주문(컴퓨터 및 전자제품 전체 · 반도체 전용 계열은 제공되지 않음)<br><span class="meta">커지면 수주가 늘었다는 뜻이다. 반도체 전용 계열이 아니다.</span></td><td>2026-08</td><td class="num">30,868 백만 달러</td><td class="num">+16.5%</td><td class="num"><b>99</b></td><td class="num">99 (120)</td><td class="num">96 (403)</td><td><code>전년 대비</code></td></tr>
+<tr><td>나스닥<br><span class="meta">커지면 기술 수요 기대가 커졌다는 뜻이다.</span></td><td>2026-09</td><td class="num">26,861 지수</td><td class="num">+18.5%</td><td class="num"><b>38</b></td><td class="num">38 (120)</td><td class="num">58 (656)</td><td><code>전년 대비</code></td></tr>
+<tr><td>필라델피아 반도체 지수<br><span class="meta">커지면 반도체 기업 주가가 올랐다는 뜻이다.</span></td><td>2026-09</td><td class="num">12,629 지수</td><td class="num">+98.3%</td><td class="num"><b>95</b></td><td class="num">95 (120)</td><td class="num">93 (376)</td><td><code>전년 대비</code></td></tr>
 </tbody></table>
 <h2>4. 아직 발표되지 않은 달</h2>
 <div class="panel">
@@ -203,7 +203,7 @@ footer { margin-top: 3rem; padding-top: 1rem;
 <div class="panel warn">
 <b>이 칸에 상관 수치를 적지 않는다.</b>
 <ul>
-<li>v10 이 측정한 값은 <b>시차 3 개월</b> 자리의 것이고, 이 칸이 가리키는 자리는 시차 0~1 이다. 다른 자리의 수치를 근거로 옮기는 것은 <code>known-pitfalls.md:45</code> 의 함정이다.</li>
+<li>v10 이 측정한 값은 <b>시차 3 개월</b> 지점의 것이고, 이 칸이 가리키는 지점은 시차 0~1 이다. 다른 지점의 수치를 근거로 옮기는 것은 <code>known-pitfalls.md:45</code> 의 함정이다.</li>
 <li>시차 0 의 값을 쓰는 것도 안 된다. 그 곡선은 사전 등록 없는 탐색으로 얻었고, 그 등록이 「탐색에서 본 최대값을 주 가설로 쓰지 않는다」를 적었다.</li>
 <li>v10 의 종속변수는 v11 에서 교체됐고 <b>v11 판정은 기각</b>이다.</li>
 </ul>
@@ -219,11 +219,11 @@ footer { margin-top: 3rem; padding-top: 1rem;
 <tr><td>나스닥</td><td>메모리 수출 중량</td><td>3 개월</td><td class="num">+0.2955</td><td>v9 통과 · 비중복 표본 p=0.1514<br><span class="meta">사후 정정 있음: v11 발 정정 블록 있음</span></td><td><code>결과보고-수량종속-v9.md:25</code></td></tr>
 <tr><td>메모리 수출 중량</td><td>메모리 수출 단가</td><td>동시</td><td class="num">-0.3015</td><td>관측 (판정 아님)</td><td><code>결과보고-수량종속-v9.md:100</code></td></tr>
 <tr><td>미국 반도체 산업생산</td><td>메모리 수출 단가</td><td>동시</td><td class="num">-0.0344</td><td>관측 · p=0.4661 (연결 없음)</td><td><code>결과보고-산업생산종속-v11.md 7 절</code></td></tr>
-<tr><td>클라우드 3사 계약 부채</td><td>메모리 수출 단가</td><td>2 분기</td><td class="num">+0.549</td><td>v7 기각 (난수 대조 11.5%)<br><span class="meta">사후 정정 있음: v11 발 정정 블록 있음</span></td><td><code>결과보고-외부시차-v7.md:46</code></td></tr>
+<tr><td>클라우드 3사 계약 부채</td><td>메모리 수출 단가</td><td>2 분기</td><td class="num">+0.549</td><td>v7 기각 (무작위 대조 11.5%)<br><span class="meta">사후 정정 있음: v11 발 정정 블록 있음</span></td><td><code>결과보고-외부시차-v7.md:46</code></td></tr>
 <tr><td>클라우드 3사 설비투자</td><td>메모리 수출 단가</td><td>동시</td><td class="num">+0.477</td><td>탐색 (사전 등록 없음)</td><td><code>조사보고-클라우드설비투자.md</code></td></tr>
 </tbody></table>
 <div class="panel warn">
-<b>철회된 값</b> — 클라우드 3사 잔여 이행 의무와 메모리 단가의 1 분기 관계를 한때 가장 큰 값으로 보고했으나 <b>철회했다.</b> 관측 두 개가 만든 값이었고 그 둘을 빼면 10 분의 1 로 떨어진다. <code>진단보고-RPO어긋남.md:3-9</code>
+<b>철회된 값:</b> 클라우드 3사 잔여 이행 의무와 메모리 단가의 1 분기 관계를 한때 가장 큰 값으로 보고했으나 <b>철회했다.</b> 관측 두 개가 만든 값이었고 그 둘을 빼면 10 분의 1 로 떨어진다. <code>진단보고-RPO어긋남.md:3-9</code>
 </div>
 <div class="panel">
 <b>이 표에 올리지 않은 것</b><ul>
@@ -329,7 +329,17 @@ footer { margin-top: 3rem; padding-top: 1rem;
 <li>이 페이지는 외부 네트워크를 쓰지 않는다. 글꼴·스크립트·그림을 밖에서 불러오지 않는다.</li>
 </ul></div>
 <div class="panel warn">
-<b>열린 미검증 7 건</b> — 연준·노동통계국 발표 일정(1 차 출처 미확인) · 한국무역협회 확정치 주기 · 지표 선정 분모 · 생산자물가 파일 둘 중 하나의 정체 · 엔비디아 설비투자 용도 · v3·v5 봉우리 판정 · 반도체 지수 수집기의 중복 행. 원장은 <code>team-reports/OPEN-NV.md</code> 에 있다.
+<b>열린 미검증 7 건</b>
+<ul>
+<li>연준·노동통계국 발표 일정(1 차 출처 미확인)</li>
+<li>한국무역협회 확정치 주기</li>
+<li>지표 선정 분모</li>
+<li>생산자물가 파일 둘 중 하나의 정체</li>
+<li>엔비디아 설비투자 용도</li>
+<li>v3·v5 봉우리 판정</li>
+<li>반도체 지수 수집기의 중복 행</li>
+</ul>
+<p>원장은 <code>team-reports/OPEN-NV.md</code> 에 있다.</p>
 </div>
 <footer>
 생성 명령 <code>python3 -I scripts/semi-dashboard-html.py</code> · 같은 숫자의 마크다운판은 <code>docs/semi-dashboard.md</code> 에 있다. 두 산출물은 같은 계산 모듈을 쓴다.
